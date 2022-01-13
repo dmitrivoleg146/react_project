@@ -1,0 +1,29 @@
+.Lesson2 {
+    background-color: #f00e2c;
+    width: 100%;
+    text-align: center;
+}
+
+.Lesson2P {
+    color: white;
+}
+
+.LoremGrey {
+    background-color: grey;
+    padding:10px 30px;
+}
+.LoremBlue{
+    background-color: #0eb4f0;
+    padding:30px 0;
+}
+.GreenSquare{
+    background-color: #0c9a0c;
+    height: 300px;
+    width:300px;
+}
+.VioletSquareSimilar{
+    background-color: #664469;
+    height: 300px;
+    width:300px;
+    border-radius: 30px;
+}
