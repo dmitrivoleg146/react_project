@@ -7,12 +7,12 @@ body {
     justify-content: center;
 }
 
-.Featured {
+.featured {
     text-align: center;
     padding: 70px;
 }
 
-.Featured > h1 {
+.featured > h1 {
     color: #645a5a;
 }
 
