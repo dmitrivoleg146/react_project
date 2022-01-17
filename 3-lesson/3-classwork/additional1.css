@@ -1,0 +1,43 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.Featured {
+    text-align: center;
+    padding: 70px;
+}
+
+.Featured > h1 {
+    color: #645a5a;
+}
+
+.center {
+    text-align: center;
+    padding: 50px;
+    box-shadow: #645a5a 5px 5px 5px;
+}
+
+.center > h2 {
+    color: #e73b01;
+
+}
+
+.center > p {
+    color: #645a5a;
+}
+
+.button {
+    background: #158ab6;
+    padding: 1px;
+    margin: 0 50px;
+    border-radius: 5px;
+}
+
+.button > p {
+    color: white;
+}
