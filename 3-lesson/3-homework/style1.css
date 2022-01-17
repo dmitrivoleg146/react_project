@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.BC {
+    display: flex;
+    column-gap: 10px;
+}
+
+.A {
+    width: 100%;
+    background: grey;
+    padding: 70px;
+}
+
+.A > p {
+    text-align: center;
+}
+
+.B {
+    background: gray;
+    width: 70%;
+    padding: 70px;
+}
+
+.B > p {
+    text-align: center;
+}
+
+.C {
+    background: grey;
+    width: 30%;
+    padding: 70px;
+}
+
+.C > p {
+    text-align: center;
+}
