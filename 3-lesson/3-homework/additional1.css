@@ -1,0 +1,36 @@
+body {
+    margin: 0
+}
+
+.header3 {
+    background-color: #1c5165;
+    padding: 30px 50px;
+}
+
+.nav {
+    background-color: #033550;
+    padding: 10px 30px;
+}
+.main_aside{
+    display: flex;
+}
+.main{
+    background-color: #158ab6;
+    width: 70%;
+    padding: 200px 240px;
+}
+.aside{
+    width: 30%;
+    background-color: #664469;
+    padding: 200px 240px;
+}
+
+.footer{
+    background-color: #00b2ff;
+    padding: 10px 30px;
+}
+.p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
