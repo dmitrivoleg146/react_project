@@ -1,0 +1,35 @@
+.header_footer {
+    width: 100%;
+    height: 150px;
+    background: #e6f7b1;
+}
+
+.container {
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu_post {
+    display: flex;
+}
+
+#menu {
+    width: 35%;
+    background: #ff2f2f;
+}
+
+.post_2 {
+    width: 65%;
+}
+
+.post {
+    height: 200px;
+    background: cadetblue;
+}
+
+.menu_post {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
