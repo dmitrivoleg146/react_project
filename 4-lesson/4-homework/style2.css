@@ -1,0 +1,39 @@
+body {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.widgets_contact {
+    width: 100%;
+    background: #1d7aa4;
+}
+
+.widgets_contact > p {
+    text-align: center;
+    color: white;
+    padding: 70px;
+    font-size: 30px;
+}
+
+.three_widgets {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+}
+
+.widget_one_two_three {
+    width: 100%;
+}
+
+.widget_one_two_three > p {
+    text-align: center;
+    background: #143f4f;
+    padding: 100px;
+    color: white;
+    font-size: 20px;
+}
