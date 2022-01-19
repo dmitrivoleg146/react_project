@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.BC {
+    display: flex;
+    column-gap: 10px;
+}
+
+.a_b_c {
+
+    background: grey;
+    padding: 70px;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.width70 {
+    width: 70%;
+}
+
+.a_b_c > p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.width30 {
+    width: 30%;
+}
+
