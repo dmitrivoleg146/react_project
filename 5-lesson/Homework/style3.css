@@ -1,0 +1,135 @@
+.body {
+    box-sizing: border-box;
+}
+
+.A {
+    background: #645a5a;
+    width: 100%;
+}
+
+.A > p {
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.togetherBCDEF {
+    display: flex;
+    column-gap: 20px;
+}
+
+.BCDE {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 80%;
+}
+
+.B {
+    background: #645a5a;
+}
+
+.C {
+    background: #645a5a;
+    width: 100%;
+}
+
+.D {
+    background: #645a5a;
+    width: 100%;
+}
+
+.E {
+    background: #645a5a;
+    width: 100%;
+}
+
+.F {
+    background: #645a5a;
+    width: 20%;
+}
+
+.B > p {
+    text-align: center;
+    padding: 50px;
+}
+
+.C > p {
+    text-align: center;
+    padding: 50px;
+}
+
+.D > p {
+    text-align: center;
+    padding: 50px;
+}
+
+.E > p {
+    text-align: center;
+    padding: 50px;
+}
+
+.flexCDE {
+    display: flex;
+    column-gap: 20px;
+    height: 100%;
+}
+
+.F > p {
+    text-align: center;
+    padding: 140px;
+}
+
+@media screen  and (min-width: 0px) and (max-width: 992px) {
+    .container {
+        display: flex;
+        row-gap: 30px;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .togetherBCDEF {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .B > p {
+        padding: 100px;
+        color: black;
+        font-size: 17px;
+        border-radius: 4px;
+    }
+
+    .A, .B, .C, .D, .E, .F {
+        width: 100%;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .BCDE {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .F > p {
+        padding: 40px;
+    }
+
+    .A > p {
+        padding: 40px;
+    }
+
+    .C > p {
+        padding: 40px;
+    }
+
+    .D > p {
+        padding: 40px;
+    }
+
+    .E > p {
+        padding: 40px;
+    }
+
+
+}

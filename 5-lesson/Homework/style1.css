@@ -62,20 +62,23 @@ body {
         padding: 0;
         border-radius: 20px;
     }
-    .B>p{
+
+    .B > p {
         padding: 100px;
         color: black;
         font-size: 17px;
         border-radius: 4px;
     }
-    .A>p{
+
+    .A > p {
         padding: 30px;
         color: black;
         font-size: 17px;
         border-radius: 4px;
     }
-    .C>p{
-        padding:30px;
+
+    .C > p {
+        padding: 30px;
         color: black;
         font-size: 17px;
 
