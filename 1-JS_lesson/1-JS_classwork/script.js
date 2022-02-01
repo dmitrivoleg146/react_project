@@ -1,54 +1,46 @@
 //1 Task
 let result = [4, 6, 10, -4, 4.6, 5.6, 8, -39, -2, 0]
 console.log(result);
-//with math random
-for (let i = 0; i < 11; i++) {
-    let count = 0;
-    for (let j = 0; j < Math.floor(Math.random() * 11); j++) {
-        count++;
-    }
-
-    console.log(count);
-}
 //2 Task
 let book = {
     name: "Eragon",
     pages: 350,
-    genre: "fantasy",
+    genre: "fantasy"
 }
 //3 Task
 let booky = {
     name: "Eragon",
     pages: 350,
     genre: "fantasy",
-    author: "Christopher Paolini",
+    author: "Christopher Paolini"
 }
 //4 Task
-let books = [];
-books[0] = {
+let books = [
+books1 = {
     name: "Eragon",
     pages: 350,
     genre: "fantasy",
-    author: "Christopher Paolini",
-}
-books[1] = {
+    author: "Christopher Paolini"
+},
+books2 = {
     name: "Rich Dad Poor Dad ",
     pages: 200,
     genre: "financial",
-    author: "Robert Kiyosaki",
-}
-books[2] = {
+    author: "Robert Kiyosaki"
+},
+books3 = {
     name: "Technical Analysis",
     pages: 187,
     genre: "financial",
-    author: "Jack Shwager",
-}
-book[3] = {
+    author: "Jack Shwager"
+},
+book4 = {
     name: "Fooled by Randomness",
     pages: 316,
     genre: "bussiness",
-    author: "Nasib Talib",
+    author: "Nasib Talib"
 }
+]
 //5 Task
 let height = 23;
 let width = 10;
