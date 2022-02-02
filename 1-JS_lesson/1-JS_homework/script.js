@@ -155,6 +155,7 @@ console.log(typeof aa);
 console.log(typeof bb);
 console.log(typeof cc);
 
+
 //6
 console.log(5 < 6);
 console.log(5 > 6);
