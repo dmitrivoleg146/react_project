@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container1 {
+
+}
+
+.nav_position1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+
+}
+
+.nav_position2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_style_a > a {
+    text-decoration: none;
+    font-size: 20px;
+    color: grey;
+    font-family: "Arial Black";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.background_img {
+    background: url("monaco.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 300px 150px;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    opacity: 0.9;
+
+}
+
+button > p {
+    padding: 5px 30px;
+}
+
+.text_in_bg > h1 {
+    color: navajowhite;
+}
+
+.text_in_bg > p {
+    color: navajowhite;
+}
+
+.nav_gap {
+    column-gap: 100px;
+}
+
+.position_under_nav_100_50 {
+
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
