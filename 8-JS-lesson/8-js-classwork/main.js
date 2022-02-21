@@ -87,11 +87,10 @@ text2[0].innerText='mon-year. Пример sep-2021';
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 let allA3 = document.getElementsByTagName('a');
 for (let allA3Element of allA3) {
-    let XXX = allA3Element.innerText;
-    allA3Element.className.add(`element_${XXX}`)
+    console.log(allA3Element)
+
+    allA3Element.classList.add(`element_${allA3Element.innerText}`)
 }
-
-
 
 
 
