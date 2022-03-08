@@ -238,10 +238,10 @@ let usersList = [
 for (const usersListElement of usersList) {
     let block = document.createElement('div');
     block.style.border = '2px solid green'
-    block.style.display='flex';
-    block.style.alignItems='center'
-    block.style.justifyContent='center'
-    block.style.flexDirection='column'
+    block.style.display = 'flex';
+    block.style.alignItems = 'center'
+    block.style.justifyContent = 'center'
+    block.style.flexDirection = 'column'
 
     let addIdDiv = document.createElement('div')
     let addIdP = document.createElement('h2')
@@ -267,7 +267,32 @@ for (const usersListElement of usersList) {
     addEmailDiv.append(addEmailP)
     block.append(addEmailDiv)
 
-    let addAddressDiv = document.createElement('div')
+    // let addAddressDiv = document.createElement('div')
+    // for (const addAddressDivElement in usersListElement.address) {
+    //     let addressLi = document.createElement('li')
+    //     addressLi.innerText = `${usersListElement.address[addAddressDivElement]}`;
+    //
+    //     for (const addressLiElement in usersListElement.geo) {
+    //         let addressL2 = document.createElement('li');
+    //         addressL2.innerText = `${usersListElement.geo[addressLiElement]}`
+    //         addAddressDiv.append(addressL2)
+    //     }
+    //     addAddressDiv.append(addressLi);
+    // }
+    // block.append(addAddressDiv)
+    // for (const addAddressDivElement in usersListElement.address) {
+    //     let addressLi = document.createElement('li')
+    //     addressLi.innerText = ${addAddressDivElement} : ${usersListElement.address[addAddressDivElement]};
+    //     addAddressDiv.append(addressLi);
+    // }
+
+    // function arrayKey(array) {
+    //     //console.log(Object.values(array));
+    //     for (let i = 0; i < array.length; i++) {
+    //         console.log(Object.keys(array[i]))
+    //     }
+    // }
+
     // for (let addressa in usersListElement.address) {
     let addAddressP = document.createElement('h2');
     let addAddressP2 = document.createElement('h2');
@@ -281,6 +306,7 @@ for (const usersListElement of usersList) {
     addAddressP4.innerText = usersListElement.address.zipcode;
     addAddressP5.innerText = usersListElement.address.geo.lat;
     addAddressP6.innerText = usersListElement.address.geo.lng;
+
 
     addAddressDiv.append(addAddressP)
     addAddressDiv.append(addAddressP2)
