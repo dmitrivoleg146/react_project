@@ -1,81 +1,129 @@
-//- Создать произвольный елемент с id = text.
-// Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
-let btn = document.querySelector('.clickMe');
+// - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується
+// та виводиться на консоль інформація з цих 2х форм.
+//     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
+//         Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+let form = document.createElement('form')
+form.setAttribute('name', 'form')
+form.style.width = '100%'
+let input1 = document.createElement('input')
+input1.setAttribute('name', 'input1')
+let input2 = document.createElement('input')
+input2.setAttribute('name', 'input2')
+form.append(input1, input2)
+
+let form2 = document.createElement('form')
+form2.setAttribute('name', 'form2')
+let input3 = document.createElement('input')
+input3.setAttribute('name', 'input3')
+let input4 = document.createElement('input')
+input4.setAttribute('name', 'input4')
+form2.append(input3, input4)
+
+let btn = document.createElement('button')
+btn.style.width = '70px';
+btn.style.height = '20px'
+
+btn.style.background = 'chocolate'
+btn.innerText = 'Click Me';
+
+document.body.append(form, form2, btn)
+document.write('<br><br>')
+
 btn.addEventListener('click', function () {
-    document.getElementById('text').style.display = 'none'
+    console.log(input1.value)
+    console.log(input2.value)
+    console.log(input3.value)
+    console.log(input4.value)
 })
 
-//- Создайте кнопку, при клике на которую, она будет скрывать сама себя.
-let btn2 = document.querySelector('.clickHide');
-btn2.addEventListener('click', function () {
-    this.style.display = 'none';
-})
+//- Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
+// При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+// (Додатковачастина для завдання)
+let input21 = document.createElement('input')
+let input22 = document.createElement('input')
+let input23 = document.createElement('input')
+let btnNew = document.createElement('button');
+btnNew.innerText = 'Create';
 
-//- створити інпут який приймає вік людини та кнопку яка підтверджує дію.При натисканні
-// на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
-let age = document.querySelector('.confAge');
-age.addEventListener('click', function () {
-    let number = document.getElementById('number').value
-    console.log(number)
-    if (number > 18) {
-        alert('Age is more than 18')
-    } else if (number < 18) {
-        alert('Age is less than 18')
-    } else {
-        alert('Age =18')
+document.body.append(input21, input22, input23, btnNew)
+
+btnNew.addEventListener('click', function () {
+    let tr = input21.value;
+    let td = input22.value;
+    let text = input23.value;
+
+    function Table(inp1, inp2, inp3) {
+        let table = document.createElement('table');
+        table.style.border = '2px solid gold'
+        document.body.append(table)
+        for (let i = 0; i < tr; i++) {
+            let tr = document.createElement('tr');
+            tr.style.border = '2px solid blue'
+            for (let j = 0; j < td; j++) {
+                let td = document.createElement('td')
+                td.innerText = `${inp3}`;
+                td.style.border = '2px solid brown'
+                tr.append(td)
+                table.append(tr)
+            }
+        }
+    }
+
+    Table(tr, td, text)
+})
+document.write('<br><br>')
+//- Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Якщо людина вводить слово і воно міститься в масиві не цензурних слів
+// кинути алерт з попередженням.
+// Перевірку робити при натисканні на кнопку
+let array = ['чахлик', 'гамнюк', 'свинтус', 'гнидич'];
+let btnWrld = document.createElement('button')
+
+let textN = document.createElement('input')
+btnWrld.style.width = '60px';
+btnWrld.style.height = '50px';
+btnWrld.innerText='Check word'
+textN.style.width = '120px';
+textN.style.height = '40px';
+
+textN.setAttribute('type', 'text')
+document.body.append(textN,btnWrld)
+
+btnWrld.addEventListener('click',function(){
+    let inputValue=textN.value
+    for (const textNElement of array) {
+        if (inputValue === textNElement) {
+            alert('Upps,bad word. Please,write good word!!!!')
+            return
+        }
+        else{
+            alert('Good word')
+            return
+        }
+    }
+})
+document.write('<br><br>')
+//- Сворити масив не цензцрних слів.
+// Сворити інпут текстового типу.
+// Потрібно перевіряти чи не містить ціле речення в собі погані слова.
+// Кинути алерт з попередженням у випадку якщо містить.
+// Перевірку робити при натисканні на кнопку
+let inputMore=document.createElement('input');
+let buttonMore=document.createElement('button');
+buttonMore.innerText='Button Click'
+document.body.append(buttonMore,inputMore);
+
+buttonMore.addEventListener('click',function(){
+    let inputValue=inputMore.value
+    for (const argument of array) {
+       if(inputValue.includes(argument)){
+           alert('Includes')
+       }
     }
 })
 
-//- Создайте меню, которое раскрывается/сворачивается при клике
-let nav = document.getElementById('nav');
-let hidden = document.querySelectorAll('.hidden')
-nav.addEventListener('click', function () {
-    for (const argument of hidden) {
-        argument.classList.toggle('hidden')
-    }
-})
 
 
-//- Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
-// Вывести список комментариев в документ, каждый в своем блоке.
-//  Добавьте каждому комментарию по кнопке для сворачивания его body.
-let comments = [
-    {title: 'Sport', body: 'Football'},
-    {title: 'Car', body: 'Porsche'},
-    {title: 'Money', body: 'Dollar'},
-    {title: 'City', body: 'Toronto'}
-]
-let divMain=document.createElement('div')
-for (const comment of comments) {
-    let div=document.createElement('div');
-    div.style.display='flex'
-    div.style.alignItems='center'
-    div.style.justifyContent='center';
-    div.style.flexDirection='column';
 
-    let h2=document.createElement('h2');
-    let p=document.createElement('p')
-    let btn1=document.createElement('button')
-    let btn2=document.createElement('button')
-    btn1.style.background='brown'
-    btn1.style.width='50px';
-    btn1.style.height='50px'
-    btn1.innerText='Title'
 
-    btn2.style.background='brown'
-    btn2.style.width='50px';
-    btn2.style.height='50px'
-    btn2.innerText='Body'
-
-    h2.innerText=comment.title;
-    p.innerText=comment.body
-    btn1.addEventListener('click',function(){
-        p.classList.toggle('hidden')
-    })
-    btn2.addEventListener('click',function(){
-        h2.classList.toggle('hidden')
-    })
-    div.append(h2,p,btn1,btn2)
-    divMain.append(div)
-}
-document.body.append(divMain)
