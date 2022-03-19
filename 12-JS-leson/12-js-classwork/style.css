@@ -1,0 +1,23 @@
+body{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+.card{
+    width: 49%;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px red;
+}
+.wraper{
+    gap:15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.post_click{
+    height: 20px;
+    width: 60px;
+    box-shadow: 1px 1px 1px 1px orange;
+    border: 1px yellow solid;
+    border-radius: 5px;
+}
