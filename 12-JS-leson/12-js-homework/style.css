@@ -1,0 +1,25 @@
+body{
+    box-sizing:border-box;
+    margin:0;
+    padding:0
+}
+.post{
+    width: 19%;
+    text-align: center;
+    box-shadow: 3px 3px 3px 3px red;
+}
+.container{
+    gap:15px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+.comment{
+    width: 49%;
+    text-align: center;
+    border: 1px solid green;
+    box-shadow: 3px 3px 3px 3px green;
+}
+.container:nth-child(2n){
+    margin-top:10px;
+}
