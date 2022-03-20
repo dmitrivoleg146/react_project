@@ -1,0 +1,24 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.post {
+    background: deepskyblue;
+}
+.commentContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.commentDiv {
+    width: 20%;
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: yellow;
+    flex-direction: column;
+    color: #033550;
+}

@@ -1,0 +1,27 @@
+body{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --userDivColor:green
+}
+.users{
+    display:flex;
+    flex-wrap:wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+}
+.user{
+    width:calc(50% - 10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--userDivColor);
+    height: 150px;
+}
+a{
+    text-decoration: none;
+    color:yellow;
+    text-shadow: chocolate;
+}

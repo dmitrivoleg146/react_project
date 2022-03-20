@@ -141,11 +141,71 @@ console.log(count(str, symb));
 let cuttString = (str, n) => str.split(' ').splice(0, n).join(" ");
 console.log(cuttString("Сила тяжести приложена к центру масс тела", 6))
 
+let go = (number, number2) => {
+    let age = 200 - number;
+    let ageNew = age - number2;
+    return `your age:${number} and your ageNew:${number2}`
+}
+console.log(go(30, 40))
+
+let cutPieces = (fruits) => {
+    return fruits * 3;
+}
+let fruitsProccessor = (apples, oranges) => {
+    let applePieces = cutPieces(apples);
+    let orangePieces = cutPieces(oranges);
+    let juice = `Juice ${applePieces} + ${orangePieces}`;
+    return juice;
+}
+console.log(fruitsProccessor(2, 3));
+
+let calAge = (birth) => {
+    return 2037 - birth;
+}
+let yearsAge = (birth, name) => {
+    let age = calAge(birth);
+    let retirement
+}
 
 
+let friends = ['jon', 'ivam', 'nazar'];
+console.log(friends[friends.length - 1])
 
+let calcAage = (birthYear) => {
+    return 2019 - birthYear;
+}
+let ages = [1300, 1440, 2000, 2010];
+const age1 = calcAage(ages[0])
+const age2 = calcAage(ages[ages.length - 1])
+console.log(age1, age2);
+const agees = [calcAage(ages[0]), calcAage(ages[2])]
+console.log(agees);
 
+const newLength = friends.push('jack');
+console.log(newLength)
 
+friends.unshift('lucas')
+console.log(friends)
+let unshifted = friends.unshift('brother');
+console.log(unshifted);
+console.log(friends);
+//1
+let calcTip = (bill) => {
+    if (bill > 50 && bill < 300) {
+        return bill * 0.15;
+    } else {
+        return bill * 0.2;
+    }
+}
 
+console.log(calcTip(100));
+//2
+let bills=[20,40,50];
+let tip1=[calcTip(bills[0]),calcTip(bills[1]),calcTip(bills[bills.length-1])];
+console.log(tip1);
+let sumThem=[bills[0]+tip1[0],bills[1]+tip1[1],bills[bills.length-1]+tip1[tip1.length-1]];
+console.log(bills,tip1,sumThem)
+let q=sumThem.toString();
+console.log(q)
 
 
