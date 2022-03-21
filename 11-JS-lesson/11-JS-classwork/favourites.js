@@ -1,12 +1,8 @@
-// const favoritesKey = 'favorites';
-// const container = document.getElementById('container');
-// const users = JSON.parse(localStorage.getItem(favoritesKey));
-//
-// users.forEach(user => {
-//     const userDiv = document.createElement('div');
-//     userDiv.className = 'user';
-//     const content = document.createElement('div');
-//     content.innerText = `Name: ${user.name}\nAge: ${user.age}\nStatus: ${user.status}`;
-//     userDiv.appendChild(content);
-//     container.appendChild(userDiv);
-// })
+let favourites = JSON.parse(localStorage.getItem('favourites'))
+let container=document.createElement('div')
+for (const favourite of favourites) {
+    let userDiv = document.createElement('div')
+    userDiv.innerText = Object.values(favourite)
+    container.append(userDiv)
+}
+document.body.append(container)
