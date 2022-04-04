@@ -33,9 +33,20 @@ answer.then((response) => {
            ${lng} 
            ${phone} 
            ${website} 
-           ${catchPhrase}
-           
-           `
+           ${catchPhrase}  `
+            let btn=document.createElement('button')
+            btn.innerText='Click me'
+            btn.addEventListener('click',function(){
+                  fetch(`https://jsonplaceholder.typicode.com/users/${user.id}/comments`)
+                      .then((response)=>{
+                          return response.json();
+                      }).then(users=>{
+                      for (const user1 of users) {
+                          console.log(user1)
+                      }
+                  })
+            })
+            div.append(btn)
             divMain.append(div)
         }
 

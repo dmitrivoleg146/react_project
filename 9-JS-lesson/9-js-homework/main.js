@@ -77,5 +77,6 @@ for (const coursesAndDurationArray2Element of coursesAndDurationArray2) {
     block.append(pCreate)
     document.body.append(block)
 
+
 }
 

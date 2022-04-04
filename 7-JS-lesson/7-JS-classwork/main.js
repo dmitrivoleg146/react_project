@@ -125,6 +125,73 @@ console.log(connection(popelushka1, prince1));
 let finder = popelushka1.find((item) => item.leg_size === prince1.slipper)
 console.log(finder);
 
+///
+let persons = {
+    firstName: 'ivan',
+    secondName: 'Vynavskiy',
+    years: 21,
+    live: 'lviv',
+    friends: ['Michael', 'Ivan', 'Nazar'],
+    driving: true,
+    greeting: function () {
+        this.age = 200 - this.years;
+        return this.age;
+    },
+    getSummary: function () {
+        return (`${this.firstName} has ${this.greeting()} old, and he has ${this.driving ? 'a quality' : 'no quality'}`)
+    }
+};
+console.log(persons.greeting());
+console.log(persons);
+console.log(persons.getSummary())
+// console.log(persons);
+// console.log(persons['years']);
+// let jonasInterests = prompt("Write something about ivan")
+// if (persons[jonasInterests]) {
+//     console.log(persons[jonasInterests])
+// } else {
+//     console.log("Wrong request");
+// }
+// console.log(persons.friends)
+// persons['twitter'] = 'rgththtgr34@twitter.com';
+// console.log(persons);
+// let bestFriend = prompt("Enter best friend")
+// {
+//     if (bestFriend === 'Michael') {
+//         console.log("He is my best friend")
+//     } else {
+//         console.log("We is my friend")
+//     }
+// }
+// console.log(`${persons.firstName} has ${persons.friends.length} and his best friend is ${persons.friends[0]}`)
 
+let persona1 = {
+    name: 'Nastia',
+    surname: 'Komarova',
+    mass: 70,
+    height: 180,
+    calcBmi: function () {
+        return (this.height / (this.mass))
+            ;
+    }
+}
+let persona2 = {
+    name: 'Oleg',
+    surname: 'Dmytriv',
+    mass: 84,
+    height: 185,
+    calcBmi: function () {
+        this.bmi=this.height / (this.mass)
+        return (this.bmi)
+    }
+}
 
+console.log(persona1.calcBmi(), persona2.calcBmi())
+if (persona1.calcBmi() > persona2.calcBmi()) {
+    console.log(`${persona1.name} BMI ${persona1.calcBmi()} > than ${persona2.name} BMI ${persona2.calcBmi()}`)
+} else {
+    console.log(`${persona2.name} BMI ${persona2.calcBmi()} > than ${persona1.name} BMI ${persona1.calcBmi()}`)
+}
 
+console.log(persona2.calcBmi())
+console.log(persona2.bmi)

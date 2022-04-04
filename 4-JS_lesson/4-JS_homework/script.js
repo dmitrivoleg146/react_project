@@ -68,6 +68,7 @@ function  forElements(someWords){
     }
 }
 forElements(numStringBool);
+
 //- створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 let arrayObjects = [{id: 1, name: "Ivan", age: 21}, {id: 2, name: "Ira", age: 30}, {id: 3, name: "Nastia", age: 18}]
 
@@ -77,3 +78,4 @@ function arrayObject(array) {
     }
 }
 arrayObject(arrayObjects);
+

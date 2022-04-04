@@ -43,7 +43,6 @@ btnCar.innerText='Car Information'
 form2.append(inputModel,inputType,inputVolume,btnCar)
 document.body.append(form2)
 
-
 let carsArray=[]
 let formCars=document.forms.form2
 formCars.onsubmit=function(e){

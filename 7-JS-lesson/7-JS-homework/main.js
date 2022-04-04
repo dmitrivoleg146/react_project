@@ -37,13 +37,9 @@ let sorted = array.sort((a, b) => {
 console.log(sorted);
 
 //- створити класс для об'єктів Client з полями id, name, surname , email, phone, order (поле є масивом зі списком товарів)
-class Clients {
-    constructor(id, name, surname, email, phone, order) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.phone = phone;
+class Clients extends User {
+    constructor(order) {
+        super(order);
         this.order = order;
     }
 }
@@ -68,3 +64,5 @@ let sortedClients = array2.sort((a, b) => {
     }
 )
 console.log(sortedClients)
+
+
