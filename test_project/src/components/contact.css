@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Script MT Bold", sans-serif;
+}
+main{
+    padding: 36px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap:15px
+}
+
+.form--inputs {
+    display: flex;
+    gap: 15px;
+}
+
+.form--input {
+    width: 50%;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid grey;
+    text-indent: 5px;
+    height: 40px;
+}
+
+.form--button {
+    width: 100%;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid grey;
+    text-indent: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+.binance--icon--position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px
+}
+.binance--icon{
+    height: 100%;
+}
+.meme--image{
+    width:100%;
+    height: 300px;
+}
