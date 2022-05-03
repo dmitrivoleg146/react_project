@@ -13,13 +13,21 @@ const Contact = () => {
     //     names.push(newNames);
     //     console.log(names)
     // }
-    let [memeImage,setArray]=React.useState("")
+    let [memeImage,setArray]=React.useState({
+        topText:"",
+        bottomText:"",
+        randomImage:objects.data.memes[1].url
+    })
+    let [allMemeImages,setMemeImages]=React.useState(objects)
     // let thingsArray=names.map((name)=> <p>{name}</p>);
     function getArray(){
        let memesArray=objects.data.memes;
        let randomNumber= Math.floor(Math.random()* memesArray.length);
-       setArray(memesArray[randomNumber].url);
-
+       let url=memesArray[randomNumber].url;
+       setArray(prev=>({
+               ...prev,
+               randomImage:url
+           }))
     }
     function onMouseOver(){
         console.log('On Mouse')
@@ -37,7 +45,7 @@ const Contact = () => {
                 <div className={'binance--icon--position'} onMouseOver={onMouseOver}>
                     <img src={binance} className={'binance--icon'} alt={'binance'}/>
                 </div>
-                <img src={memeImage} className={'meme--image'}/>
+                <img src={memeImage.randomImage} className={'meme--image'}/>
             </form>
         </main>
     );
