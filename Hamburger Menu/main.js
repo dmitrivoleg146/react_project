@@ -8,25 +8,23 @@ btn.addEventListener('click', () => {
     let inpWord = document.getElementById('inp-word').value
     console.log(inpWord)
     fetch(`${url}${inpWord}`)
-        .then((response) =>
-            response.json())
+        .then((response) => {
+            response.json();
+        })
         .then((data) => {
             console.log(data)
             result.innerHTML = `
             <div class="word">
             <h3>${inpWord}</h3>
-            <button onclick="playSound()"><i class="fa-solid fa-microphone"></i></button>
+            <button><i class="fa-solid fa-microphone"></i></button>
         </div>
         <div class="details">
-            <p>${data[0].meanings[0].partOfSpeech}</p>
-            <p>${data[0].phonetics[1].text}</p>
+            <p>pos</p>
+            <p>/simple/</p>
         </div>
-        <p class="word-meaning">${data[0].meanings[0].definitions[0].definition}</p>
-        <p class="word-example">${data[0].meanings[0].definitions[0].example || ''}</p>`
-            sound.setAttribute('src', `${data[0].phonetics[0].audio}`)
-            console.log(sound)
+        <p class="word-meaning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, consectetur cum
+            deserunt facere ipsa molestiae nam nihil odit perspiciatis quaerat qui quisquam ratione reprehenderit soluta
+            ullam unde vero voluptas. Provident.</p>
+        <p class="word-example">New word</p>`
         })
 })
-function playSound(){
-    sound.play()
-}
